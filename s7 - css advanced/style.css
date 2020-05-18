@@ -1,0 +1,48 @@
+h3 {
+    color: red;
+    font-size: 3em;
+    font-family: fantasy;
+    border-bottom: 2px solid blue;
+    border-right: 2px solid blue;
+    width: 400px;
+    text-align: center;
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    transition: all 1s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+/* 
+    video 3 - flexbox.
+    http://flexboxfroggy.com/
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+/*
+    video 5 - css 3.
+    https://www.w3schools.com/cssref/css3_browsersupport.asp
+    https://caniuse.com/
+    https://thoughtbot.com/blog/transitions-and-transforms
+*/
+
+/*
+    video 7 - responsive UI.
+    in chrome, inspect, top-left hand: toggle device, at top, select device.     
+*/

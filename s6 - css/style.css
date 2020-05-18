@@ -1,0 +1,117 @@
+/*
+    selector {
+        property: value;
+*/
+
+body {
+    /* background-image: url(./images/sky.jpg); */
+    background-color: gray;
+    padding: 10px;
+}
+
+h2, h3 {
+    color: red;
+    text-align: center;
+    border: 4px solid purple;
+    cursor: pointer;
+}
+
+p {
+    color: pink;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+/* p class="webtext" */
+.webtext {
+    color: blue;
+}
+
+
+/* p id="active" */
+#active {
+    color: green;
+    line-height: 30px; 
+    font-style: italic;
+    font-weight: bold;
+    font-size: 150%;
+    font-family: 'Poiret One', cursive;
+
+}
+
+
+/* p class="first" with hover styling */
+.first:hover {
+    color: red;
+}
+
+.myBamboo {
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+
+
+/*
+    video 2 - your first css.
+    right click on website elements to find out how it was styled.
+    separation of concern.
+*/
+
+
+/*
+    video 3 - css properties.
+    https://css-tricks.com
+    paletton.com
+*/
+
+/*
+    video 4 - css selectors.
+    2 different tags with the same styling, also.
+    
+    html                    css
+    <p class="webtext">     .webtext 
+
+    <p id="active">         #active
+
+    <p class="first">            p:hover     // psudo class
+*/
+
+/*
+    video 6 - text and font.
+    
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 30px;
+
+    https://fonts.google.com/
+    html pagr: copy link in head section.
+    css file: use in font-family.
+*/
+
+/*
+    video 7 - images.
+*/
+
+/*
+    video 8 - box model.    //    style2.css for login.html
+*/
+
+/*
+    video 9 - px vs em vs rem.
+
+    font-size: 20px;
+    font-size: 5em;     // 5 times the size
+    font-size: 2rem;    // 2x relevent to the root paragraph
+*/

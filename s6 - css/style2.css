@@ -1,0 +1,18 @@
+h2 {
+    color: blue;
+}
+
+.boxmodel {
+    border: 5px solid red;
+    display: inline-block;
+    padding: 20px;
+    width: 200px;
+    margin: 8px;
+    font-size: 20px;
+}
+
+span {
+    font-size: 2rem;
+    text-decoration: underline;
+    font-style: italic;
+}
