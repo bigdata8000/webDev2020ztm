@@ -1,0 +1,22 @@
+body {
+    background-color: lightgray;
+}
+
+.box {
+    display: inline;
+}
+
+img {
+    width: 160px;
+    padding: 16px;
+    /* border: solid 2px black; */
+}
+
+hr {
+    width: 90%;
+}
+
+footer{
+    text-align: center;
+    color: purple;
+}
