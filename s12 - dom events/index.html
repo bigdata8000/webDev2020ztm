@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom events</title>
+</head>
+<body>
+    
+    <h1>shopping list</h1>
+    <p id="first">Get it done today</p>
+    
+    <input id="userinput" type="text" name="" placeholder="enter items">
+    <button id="enter">add this</button>
+
+    <ul>
+        <li random="23">notebook</li>
+        <li>jello</li>
+        <li>spinach</li>
+        <li>rice</li>
+        <li>cake</li>
+        <li>candles</li>
+    </ul>
+
+<br>
+<br>
+<hr>
+
+    <h2>Quiz time</h2>
+
+    <p>
+        What is man's best friend ? hint 3 letters, has 4 legs.<br><br>
+        <input type="text" id="answer1" name="answer1" placeholder="enter your answer here">
+        <button onclick="superMan()">Check answer</button>
+        <span id="score"></span>
+    </p>
+
+
+        <script>
+            var yourAnswer = document.getElementById("answer1").value;
+            var yourResult = document.getElementById("score");
+            var correctAnswer = "dog";
+
+            function superMan() {
+                if (yourAnswer === correctAnswer) {
+                    yourResult.innerHTML = " Correct, Well done !!!";
+                } else {
+                    yourResult.innerHTML = " Try again.";
+                }
+            }
+           
+        </script>
+
+
+
+
+
+
+
+
+<!-- video 4 - original script, refactored on script.js -->
+
+    <script>
+        var button = document.getElementById("enter");
+        var input = document.getElementById("userinput");
+        var ul = document.querySelector("ul");
+
+        button.addEventListener("click", function() {    
+            if (input.value.length > 0) {
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(input.value));
+                ul.appendChild(li);
+                input.value = "";
+            }
+        })
+
+
+        input.addEventListener("keypress", function(event) {
+            if (input.value.length > 0 && event.keyCode === 13) {
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(input.value));
+                ul.appendChild(li);
+                input.value = "";
+            }
+        })
+
+
+
+    </script>
+
+
+</body>
+</html>
+
+<!--
+    enter = key code: 13.
+
+    https://developer.mozilla.org/en-US/docs/Web/Events
+    
+    https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+
+-->

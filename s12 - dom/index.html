@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>shopping list</h1>
+    <p id="first">Get it done today</p>
+    <p class="second">No excuses</p>
+    <p class="third">No more excuses</p>
+    <ul>
+        <li random="23">notebook</li>
+        <li>jello</li>
+        <li>spinach</li>
+        <li>rice</li>
+        <li>cake</li>
+        <li>candles</li>
+    </ul>
+
+    <br>
+    <button onclick="magic()">Click me</button>
+    <button onclick="greeting()">Click Here</button>
+    <button onclick="colorMe()">apply colour?</button>
+
+<br>
+<br>
+<hr>
+
+    <p>
+        <h3>Q: What is 4 x 5 ? 
+            <button onclick="a1()">show answer</button>
+            <span id="q1"></span>
+        </h3> 
+    </p>
+
+<br>
+<hr>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- --------------------------------------------- -->
+
+
+<script>
+    function a1() {
+        document.getElementById("q1").innerHTML = "4 x 5 = 20.";
+    }
+
+</script>
+
+
+<script>
+    function magic() {
+        document.querySelector("h1").innerHTML = "Hello JavaScript 2020.";
+    }
+
+</script>
+
+
+<!--
+
+    IN CHROME, Console:
+
+    document.getElementsByTagName("h1");
+    document.getElementsByClassName("second");
+    document.getElementById("first");
+
+
+USE THESE:
+
+    document.querySelector("h1");
+    document.querySelectorAll("li");
+    
+    getAttribute
+    setAttribute
+
+    document.querySelector("h1").style.background = 'yellow';
+
+APPLY DIFFERENT CLASS:
+
+    document.querySelector("li").classList.add("done");
+   
+    
+DANGERIOUS:
+
+    document.querySelector("h1").innerHTML = "Hello JavaScript!";
+
+-->
